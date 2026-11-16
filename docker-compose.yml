@@ -1,0 +1,10 @@
+services:
+  photographer:
+    build:
+      context: .
+    environment:
+      APP_ENV: local
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
